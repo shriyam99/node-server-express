@@ -29,6 +29,14 @@ app.get('/', (req, res)=>{
   });
 });
 
+app.get('/projects', (req, res)=>{
+  res.render('projects.hbs', {
+    title: 'My Projects',
+    message: 'A page to display all of my projects',
+    // currentDate: new Date().getFullYear(),
+  });
+});
+
 app.get('/about', (req, res)=>{
   res.render('about.hbs', {
     // currentDate: new Date().getFullYear(),
